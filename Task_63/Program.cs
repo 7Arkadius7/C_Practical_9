@@ -11,4 +11,11 @@ void NumbersRec(int arg1)
     System.Console.Write($"{arg1} ");
 }
 
+// void NumbersRec(int arg1) // Выдает числа в обратном порядке
+// {
+//     if (arg1 == 0) return;
+//     NumbersRec(arg1 - 1);
+//     System.Console.Write($"{arg1} ");
+// }
+
 NumbersRec(a);
