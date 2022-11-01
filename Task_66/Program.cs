@@ -6,13 +6,13 @@ Console.WriteLine("Пожалуйста, введите число N");
 int numberN = Convert.ToInt32(Console.ReadLine());
 int sum = 0;
 
-if (numberM < numberN) Console.WriteLine(Summ(numberM, numberN));
-else Console.WriteLine(Summ(numberN, numberM));
+if (numberM < numberN) Console.WriteLine(SumDigit(numberM, numberN));
+else Console.WriteLine(SumDigit(numberN, numberM));
 
-int Summ(int M, int N)
+int SumDigit(int M, int N)
 {
     if (M == N + 1) return 0;
-    Summ(M + 1, N);
+    SumDigit(M + 1, N);
     sum = sum + M;
     return sum;
 }
