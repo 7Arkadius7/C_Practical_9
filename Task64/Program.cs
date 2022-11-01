@@ -1,7 +1,7 @@
 ﻿Console.Clear();
 
-Console.WriteLine("Пожалуйста, введите число");
-int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Пожалуйста, введите число N");
+int n = Convert.ToInt32(Console.ReadLine());
 
 void NumbersRec(int arg1)
 {
@@ -10,4 +10,4 @@ void NumbersRec(int arg1)
     NumbersRec(arg1 - 1);
 }
 
-NumbersRec(a);
+NumbersRec(n);
